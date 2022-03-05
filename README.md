@@ -5,4 +5,4 @@ Using the Advent of Code for 2021, as a means of having a bit of fun
 I started this project on March 4, 2022. Obviously, its after the traditional time period of Advent calendars. No matter, I'm using this for my personal practice.
 
 ## Source for Advent of Code 2021
-The URL is here [https://adventofcode.com/](Advent of Code, for 2021)
+The URL is here [https://adventofcode.com](Advent of Code, for 2021)
