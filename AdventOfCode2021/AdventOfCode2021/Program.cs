@@ -2,4 +2,6 @@
 
 // This is written using VS 2022
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Advent of Code 2021");
+Console.WriteLine("Yes, its a bit old");
+Console.WriteLine("So what, I'll work on this as I've got time to goof off ;)");
