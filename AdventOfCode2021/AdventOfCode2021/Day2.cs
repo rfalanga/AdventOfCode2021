@@ -15,6 +15,12 @@ namespace AdventOfCode2021
             //get lines
             var lines = Day1.ReadDay1File();
 
+            if (lines == null)
+            {
+                Console.WriteLine("Day1 data file had no data");
+                return;
+            }
+
             var window1 = new Models.ThreeMemberWindow();   //first window
             var window2 = new Models.ThreeMemberWindow();   //second window, always one value behind window1
 
