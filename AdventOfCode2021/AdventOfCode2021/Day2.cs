@@ -24,6 +24,12 @@ namespace AdventOfCode2021
             Console.WriteLine($"Sum of window1 {window1.Sum()}");
             window1.Add(3);
             Console.WriteLine($"Sum of window1 {window1.Sum()}");
+            window1.Add(4);
+            Console.WriteLine($"Sum of window1 {window1.Sum()}");
+            window1.Add(5);
+            Console.WriteLine($"Sum of window1 {window1.Sum()}");
+            window1.Add(6);
+            Console.WriteLine($"Sum of window1 {window1.Sum()}");
         }
     }
 }

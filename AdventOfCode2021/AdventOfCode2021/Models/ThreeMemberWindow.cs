@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AdventOfCode2021.Models
+﻿namespace AdventOfCode2021.Models
 {
     /// <summary>
     /// This class is to assist with Day 2. It will maintain the state in an array[3] of values added 
@@ -29,7 +23,7 @@ namespace AdventOfCode2021.Models
         public void Add(int NewValue)
         {
             localArray[nextIndex++] = NewValue;
-            nextIndex = nextIndex % 3;
+            nextIndex %= 3;
         }
 
         /// <summary>
