@@ -45,10 +45,13 @@ namespace AdventOfCode2021
                         {
                             Console.WriteLine($"{integerRead} (decreased)");
                         }
-                        compare = integerRead;
                     }
+
+                    compare = integerRead;
                 }
             }
+
+            Console.WriteLine($"The number of depth measurement increases from the previous measurement is {numOfIncreases}");
         }
     }
 }
