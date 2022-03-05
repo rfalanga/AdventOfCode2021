@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AdventOfCode2021
+﻿namespace AdventOfCode2021
 {
     public static class Day1
     {
@@ -12,13 +6,13 @@ namespace AdventOfCode2021
         {
             Console.WriteLine("In Day1");
 
-            // inspired by: https://stackoverflow.com/questions/13762338/read-files-from-a-folder-present-in-project
-            string executionPath = Environment.CurrentDirectory;
-            var path = executionPath + @"\Data\Day1.txt";
+            var readLines = ReadDay1File();
 
-            //Ingest the Day 1 data
-            
-            var readLines = File.ReadAllLines(path);
+            if (readLines == null)
+            {
+                Console.WriteLine("Day1 data file had no data");
+                return;
+            }
 
             //now look for increase vs. decrease value
             int compare = -1;
@@ -52,6 +46,17 @@ namespace AdventOfCode2021
             }
 
             Console.WriteLine($"The number of depth measurement increases from the previous measurement is {numOfIncreases}");
+        }
+
+        public static string[]? ReadDay1File()
+        {
+            // inspired by: https://stackoverflow.com/questions/13762338/read-files-from-a-folder-present-in-project
+            string executionPath = Environment.CurrentDirectory;
+            var path = executionPath + @"\Data\Day1.txt";
+
+            //Ingest the Day 1 data
+
+            return File.ReadAllLines(path);
         }
     }
 }
