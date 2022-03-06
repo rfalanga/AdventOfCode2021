@@ -14,4 +14,5 @@ Console.WriteLine("So what, I'll work on this as I've got time to goof off ;)");
  * leaving uncommented the day I do want to run.
  */
 
-Day1.DoDay1();
+//Day1.DoDay1();
+Day2.DoDay2();
