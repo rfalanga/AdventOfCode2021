@@ -102,6 +102,12 @@ namespace AdventOfCode2021
                     //Note: this should NOT happen
                     Console.WriteLine($"Unknown direction {parts[0]}");
                 }
+
+                if (aim < 0)
+                {
+                    //it doesn't make sense that the submarine could be above water
+                    aim = 0;
+                }
             }
 
             Console.WriteLine($"Horizontal position and depth together are {horizontalPosition * depth}");
