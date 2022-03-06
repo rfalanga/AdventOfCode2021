@@ -33,6 +33,32 @@ namespace AdventOfCode2021
             //if the word is "down", add the second value to depth
 
             //if the word is "up", subtract the second value from depth
+
+            foreach (var line in lines)
+            {
+                string[] parts;
+                parts = line.Split(' ');
+                var intPart = int.Parse(parts[1]);
+                if (parts[0] == "forward")
+                {
+                    horizontalPosition += intPart;
+                }
+                else if (parts[0] == "down")
+                {
+                    depth += intPart;
+                }
+                else if (parts[0] == "up")
+                {
+                    depth -= intPart;
+                }
+                else
+                {
+                    //Note: this should NOT happen
+                    Console.WriteLine($"Unknown direction {parts[0]}");
+                }
+            }
+
+            Console.WriteLine($"Horizontal position and depth together are {horizontalPosition * depth}");
         }
 
         public static string[]? ReadDay2PrimeFile()
