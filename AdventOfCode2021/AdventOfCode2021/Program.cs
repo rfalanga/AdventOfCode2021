@@ -15,4 +15,5 @@ Console.WriteLine("So what, I'll work on this as I've got time to goof off ;)");
  */
 
 //Day1.DoDay1();
-Day2.DoDay2();
+//Day2.DoDay2();
+Day2Prime.DoDay2Prime();
