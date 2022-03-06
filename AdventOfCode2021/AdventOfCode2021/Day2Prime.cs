@@ -10,7 +10,7 @@ namespace AdventOfCode2021
     {
         public static void DoDay2Prime()
         {
-            //Should this be Day 3?
+            //Should this be Day 3? No
             Console.WriteLine("In Day 2 - Prime");
 
             var lines = ReadDay2PrimeFile();
@@ -50,6 +50,52 @@ namespace AdventOfCode2021
                 else if (parts[0] == "up")
                 {
                     depth -= intPart;
+                }
+                else
+                {
+                    //Note: this should NOT happen
+                    Console.WriteLine($"Unknown direction {parts[0]}");
+                }
+            }
+
+            Console.WriteLine($"Horizontal position and depth together are {horizontalPosition * depth}");
+        }
+
+        public static void DoDay2Part2()
+        {
+            Console.WriteLine("In Day 2, Part 2");
+
+            var lines = ReadDay2PrimeFile();
+
+            if (lines == null)
+            {
+                Console.WriteLine("Day 2 Prime file is empty");
+                return;
+            }
+
+            int horizontalPosition = 0;
+            int depth = 0;
+            int aim = 0;
+
+            foreach (var line in lines)
+            {
+                string[] parts;
+                parts = line.Split(' ');
+                var intPart = int.Parse(parts[1]);
+                if (parts[0] == "forward")
+                {
+                    horizontalPosition += intPart;
+                    aim += (aim * intPart);
+                }
+                else if (parts[0] == "down")
+                {
+                    depth += intPart;
+                    aim += intPart;
+                }
+                else if (parts[0] == "up")
+                {
+                    depth -= intPart;
+                    aim -= intPart;
                 }
                 else
                 {
