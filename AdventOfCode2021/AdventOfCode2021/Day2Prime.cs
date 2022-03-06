@@ -85,7 +85,7 @@ namespace AdventOfCode2021
                 if (parts[0] == "forward")
                 {
                     horizontalPosition += intPart;
-                    aim += (aim * intPart);
+                    depth += (aim * intPart);
                 }
                 else if (parts[0] == "down")
                 {
