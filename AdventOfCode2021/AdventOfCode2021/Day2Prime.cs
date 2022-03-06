@@ -89,12 +89,10 @@ namespace AdventOfCode2021
                 }
                 else if (parts[0] == "down")
                 {
-                    depth += intPart;
                     aim += intPart;
                 }
                 else if (parts[0] == "up")
                 {
-                    depth -= intPart;
                     aim -= intPart;
                 }
                 else
