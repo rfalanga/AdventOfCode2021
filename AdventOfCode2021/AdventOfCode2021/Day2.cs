@@ -26,24 +26,6 @@ namespace AdventOfCode2021
 
             int previousRead = 0;
 
-            //window1.Add(1);
-            //Console.WriteLine($"Sum of window1 {window1.Sum()}");
-            //window1.Add(2);
-            //window2.Add(2);
-            //Console.WriteLine($"Sum of window1 {window1.Sum()}");
-            //window1.Add(3);
-            //window2.Add(3);
-            //Console.WriteLine($"Sum of window1 {window1.Sum()}");
-            //window1.Add(4);
-            //window2.Add(4);
-            //Console.WriteLine($"Sum of window1 {window1.Sum()}");
-            //window1.Add(5);
-            //window2.Add(5);
-            //Console.WriteLine($"Sum of window1 {window1.Sum()}");
-            //window1.Add(6);
-            //window2.Add(6);
-            //Console.WriteLine($"Sum of window1 {window1.Sum()}");
-
             int sum1 = -1, sum2 = -1;
             int numOfIncreases = 0;
 

@@ -6,7 +6,7 @@ using AdventOfCode2021;
 
 Console.WriteLine("Advent of Code 2021");
 Console.WriteLine("Yes, its a bit old");
-Console.WriteLine("So what, I'll work on this as I've got time to goof off ;)");
+Console.WriteLine("So what, I'll work on this as I've got time to goof off");
 
 /*
  * This is the start of running each day in turn. Note: I'm being somewhat lazy
@@ -15,4 +15,5 @@ Console.WriteLine("So what, I'll work on this as I've got time to goof off ;)");
  */
 
 //Day1.DoDay1();
-Day2.DoDay2();
+//Day2.DoDay2();
+Day2Prime.DoDay2Prime();
