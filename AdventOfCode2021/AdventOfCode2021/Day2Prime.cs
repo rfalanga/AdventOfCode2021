@@ -13,7 +13,8 @@ namespace AdventOfCode2021
             //Should this be Day 3? No
             Console.WriteLine("In Day 2 - Prime");
 
-            var lines = ReadDay2PrimeFile();
+            //var lines = ReadDay2PrimeFile();
+            var lines = Common.ReadFileHelper.ReadTextFileReturnContents("Day2Prime.txt");
 
             if (lines == null)
             {
