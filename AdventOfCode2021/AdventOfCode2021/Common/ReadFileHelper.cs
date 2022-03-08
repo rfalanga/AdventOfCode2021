@@ -5,7 +5,7 @@
     {
         /// <summary>
         /// This is the routine that will read through the Advent of Code files. It reads the passed file, then 
-        /// this constructs the the full path to the file and opens it, reads all the contents and returns 
+        /// this constructs the full path to the file and opens it, reads all the contents and returns 
         /// the contents as a nullable string[]. The file MUST be in the Data folder
         /// </summary>
         /// <param name="TextFileName">The name of the text file, for example: Day1.txt </param>
