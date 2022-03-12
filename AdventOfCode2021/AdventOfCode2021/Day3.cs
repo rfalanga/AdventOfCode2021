@@ -28,8 +28,8 @@ namespace AdventOfCode2021
                 new Day3Binary();
                 new Day3Binary();
                 new Day3Binary();
-                    new Day3Binary()
-                    };
+                new Day3Binary();
+             };
 
             foreach (var line in lines)
             {
