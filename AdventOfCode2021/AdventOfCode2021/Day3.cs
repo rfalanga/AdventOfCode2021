@@ -17,19 +17,7 @@ namespace AdventOfCode2021
             var lines = ReadFileHelper.ReadTextFileReturnContents("Day3.txt");
 
             //this is the tricky part
-            Day3Binary[12] day3Array = { new Day3Binary();
-                new Day3Binary();
-                new Day3Binary();
-                new Day3Binary();
-                new Day3Binary();
-                new Day3Binary();
-                new Day3Binary();
-                new Day3Binary();
-                new Day3Binary();
-                new Day3Binary();
-                new Day3Binary();
-                new Day3Binary();
-             };
+            Day3Binary[] day3Array = new Day3Binary[12];
 
             foreach (var line in lines)
             {
