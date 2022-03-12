@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AdventOfCode2021.Common;
 
 namespace AdventOfCode2021
 {
@@ -13,7 +14,8 @@ namespace AdventOfCode2021
             //Should this be Day 3? No
             Console.WriteLine("In Day 2 - Prime");
 
-            var lines = ReadDay2PrimeFile();
+            //var lines = ReadDay2PrimeFile();
+            var lines = ReadFileHelper.ReadTextFileReturnContents("Day2Prime.txt");
 
             if (lines == null)
             {
