@@ -55,5 +55,10 @@ namespace AdventOfCode2021
 
             Console.WriteLine($"The power consumption is {powerConsumption}");
         }
+
+        public static void DoPart2()
+        {
+            //
+        }
     }
 }
