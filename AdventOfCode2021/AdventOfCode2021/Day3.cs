@@ -16,12 +16,23 @@ namespace AdventOfCode2021
 
             var lines = ReadFileHelper.ReadTextFileReturnContents("Day3.txt");
 
+            if (lines == null)
+            {
+                Console.WriteLine("Day 3 text file is empty");
+                return;
+            }
+
             //this is the tricky part
             Day3Binary[] day3Array = new Day3Binary[12];
 
             foreach (var line in lines)
             {
-                //
+                //break the line up into the 12 parts of the binary string
+                for (int i = 0; i < 12; i++)
+                {
+                    char c = line.ElementAt(i);
+                    day3Array[i].AddBit(c);
+                }
             }
         }
     }
