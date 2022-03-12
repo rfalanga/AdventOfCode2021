@@ -24,6 +24,8 @@ namespace AdventOfCode2021
 
             //this is the tricky part
             Day3Binary[] day3Array = new Day3Binary[12];
+            for (int i = 0; i < 12; i++)
+                day3Array[i] = new Day3Binary();
 
             foreach (var line in lines)
             {
@@ -34,6 +36,24 @@ namespace AdventOfCode2021
                     day3Array[i].AddBit(c);
                 }
             }
+
+            //construct the gamma and epsilon rate values, as binary strings of numbers
+            var gammaRateSB = new StringBuilder();
+            var epsilonRateSB = new StringBuilder();
+
+            for (int i = 0; i < 12; i++)
+            {
+                gammaRateSB.Append(day3Array[i].MostCommonBit());
+                epsilonRateSB.Append(day3Array[i].LeastCommonBit());
+            }
+
+            //convert the binary representation of gamma and epsilon rates to decimarl
+            int gammaRate = Convert.ToInt32(gammaRateSB.ToString(), 2);
+            int epsilonRate  = Convert.ToInt32(epsilonRateSB.ToString(), 2);
+
+            var powerConsumption = gammaRate * epsilonRate;
+
+            Console.WriteLine($"The power consumption is {powerConsumption}");
         }
     }
 }
