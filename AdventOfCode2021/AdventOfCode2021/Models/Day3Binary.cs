@@ -9,7 +9,7 @@
         /// <returns>The most frequent value</returns>
         public string MostCommonBit()
         {
-            if (numOf1 >= numOf0)
+            if (numOf1s >= numOf0s)
             {
                 return "1";
             }

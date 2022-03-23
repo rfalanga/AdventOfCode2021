@@ -8,8 +8,8 @@ namespace AdventOfCode2021.Models
 {
     public class Day3BinaryBase : IDay3Binary
     {
-        protected int numOf1;
-        protected int numOf0;
+        protected int numOf1s;
+        protected int numOf0s;
 
         /// <summary>
         /// This takes either a char value of '0' or a char value of '1'. No other values are valid.
@@ -22,11 +22,11 @@ namespace AdventOfCode2021.Models
         {
             if (BitToAdd == '0')
             {
-                numOf0++;
+                numOf0s++;
             }
             else
             {
-                numOf1++;
+                numOf1s++;
             }
         }
     }
