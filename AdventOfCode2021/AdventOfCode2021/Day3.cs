@@ -58,7 +58,24 @@ namespace AdventOfCode2021
 
         public static void DoPart2()
         {
-            //
+            Console.WriteLine("In Day 3, Part 2");
+
+            var lines = ReadFileHelper.ReadTextFileReturnContents("Day3.txt");
+
+            if (lines == null)
+            {
+                Console.WriteLine("Day 3 text file is empty");
+                return;
+            }
+
+            /*
+             * This is the tricky part for day 3, part 2. We've got to determine the bit criteria
+             * (oxygen generator rating and CO2 scrubber rating), which are different values.
+             * It would be best to create a helper function that I can feed lines to, in two
+             * separate calls. After all, there's no
+             * guarantee that the filtering for oxygen generator rating and CO2 scrubber rating
+             * will result in the same leftovers with each step.
+             */
         }
     }
 }
