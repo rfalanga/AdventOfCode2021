@@ -20,3 +20,7 @@ Console.WriteLine("So what, I'll work on this as I've got time to goof off");
 //Day2Prime.DoDay2Part2();
 //Day3.DoPart1();
 Day3.DoPart2();
+
+/*
+ * Merging this into main, then moving onto this year's Advent of Code repo.
+ */
